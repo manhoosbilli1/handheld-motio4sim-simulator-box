@@ -1045,34 +1045,34 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:ESD9B3.3ST5G"
+		(symbol "Jumper:Jumper_2_Open"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "JP"
+				(at 0 2.794 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "ESD9B3.3ST5G"
-				(at 0 -2.54 0)
+			(property "Value" "Jumper_2_Open"
+				(at 0 -2.286 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Diode_SMD:D_SOD-923"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1081,7 +1081,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1090,7 +1090,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "ESD protection diode, 3.3Vrwm, SOD-923"
+			(property "Description" "Jumper, 2-pole, open"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1099,7 +1099,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode TVS ESD"
+			(property "ki_keywords" "Jumper SPST"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1108,7 +1108,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*SOD?923*"
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1117,35 +1117,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "ESD9B3.3ST5G_0_1"
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
-					)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
+			(symbol "Jumper_2_Open_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -1154,12 +1129,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)
-					)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
-						(width 0.2032)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -1167,11 +1141,25 @@
 					)
 				)
 			)
-			(symbol "ESD9B3.3ST5G_1_1"
+			(symbol "Jumper_2_Open_0_1"
+				(arc
+					(start -1.524 1.27)
+					(mid 0 1.778)
+					(end 1.524 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Open_1_1"
 				(pin passive line
-					(at -3.81 0 0)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "A1"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1187,9 +1175,9 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "A2"
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1608,7 +1596,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "-Active LOW \n-5V\n-No current Limiting necessary\n-Have connection but not using yellow\n"
+	(text "-Active LOW \n-5V\n-No current Limiting necessary\n-Have connection but not using yellow\n- The LEDS have builtin resistors"
 		(exclude_from_sim no)
 		(at 148.59 123.19 0)
 		(effects
@@ -1637,6 +1625,12 @@
 		(uuid "03f11509-21eb-4295-b3fd-c83f7292ff6e")
 	)
 	(junction
+		(at 95.25 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e67d2fe-4bc7-46b8-8fa3-9490c2dbd7be")
+	)
+	(junction
 		(at 121.92 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1649,16 +1643,10 @@
 		(uuid "14761a6c-238b-4862-9998-7e51c9929a9b")
 	)
 	(junction
-		(at 137.16 92.71)
+		(at 95.25 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "33556dcb-7689-412b-a7d8-01e79baf6922")
-	)
-	(junction
-		(at 121.92 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4acb36c8-2398-4617-9fd8-88adbc3d9299")
+		(uuid "2180ef9a-3b8f-4a3a-a2ed-263c1881e95d")
 	)
 	(junction
 		(at 109.22 137.16)
@@ -1679,46 +1667,22 @@
 		(uuid "59513241-66e2-4032-a93e-59e106816576")
 	)
 	(junction
-		(at 95.25 137.16)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62ba4234-ae3f-452f-adcd-5ce962607ef7")
-	)
-	(junction
-		(at 86.36 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62eeb30d-0cc4-4844-aca8-895f2f8554e4")
-	)
-	(junction
-		(at 120.65 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ada1edd3-5328-47f5-a30a-6691b68c2ea8")
-	)
-	(junction
 		(at 86.36 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b24a1f38-c3f4-425e-9a9e-9d89d3cb12b5")
-	)
-	(junction
-		(at 137.16 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b87a1ed8-2acc-44f1-8fc6-124bbb312fcd")
-	)
-	(junction
-		(at 95.25 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba31b11e-0061-4fd5-842d-723c30591a45")
+		(uuid "cfc59981-a522-43fd-98e7-8bc06ea88078")
 	)
 	(junction
 		(at 95.25 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d70c2c07-135f-44d8-8db9-f82d02608142")
+	)
+	(junction
+		(at 86.36 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e68fe6b0-acba-4a52-9b1b-abbf1cee2a23")
 	)
 	(no_connect
 		(at 147.32 87.63)
@@ -1740,16 +1704,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 137.16) (xy 95.25 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e45fad0-91ea-44a1-bc2c-9b482535b3bf")
-	)
-	(wire
-		(pts
 			(xy 128.27 115.57) (xy 153.67 115.57)
 		)
 		(stroke
@@ -1757,6 +1711,16 @@
 			(type default)
 		)
 		(uuid "0ef010f6-244e-40f7-8208-0173f7dffde3")
+	)
+	(wire
+		(pts
+			(xy 129.54 110.49) (xy 153.67 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11a98297-3411-43a3-89de-a790744a2c6b")
 	)
 	(wire
 		(pts
@@ -1780,7 +1744,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 110.49) (xy 153.67 110.49)
+			(xy 116.84 110.49) (xy 119.38 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1880,7 +1844,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 92.71) (xy 132.08 92.71)
+			(xy 132.08 92.71) (xy 144.78 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1930,16 +1894,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 153.67) (xy 95.25 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6372e419-0b72-4fbd-a11e-6fd6eaf8b401")
-	)
-	(wire
-		(pts
 			(xy 147.32 87.63) (xy 153.67 87.63)
 		)
 		(stroke
@@ -1980,16 +1934,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 92.71) (xy 137.16 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8dd34b0c-736a-4ef2-8641-93505d63b14b")
-	)
-	(wire
-		(pts
 			(xy 118.11 102.87) (xy 121.92 102.87)
 		)
 		(stroke
@@ -2020,6 +1964,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 132.08) (xy 87.63 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "984f96fa-191a-43a5-bb9e-23d03e50f659")
+	)
+	(wire
+		(pts
 			(xy 116.84 143.51) (xy 116.84 110.49)
 		)
 		(stroke
@@ -2027,16 +1981,6 @@
 			(type default)
 		)
 		(uuid "99e1cb5a-d9a2-47b3-822e-9654357845ee")
-	)
-	(wire
-		(pts
-			(xy 121.92 102.87) (xy 137.16 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d3de6a9-16e0-4132-b0ec-8e909af83536")
 	)
 	(wire
 		(pts
@@ -2060,6 +2004,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 153.67) (xy 109.22 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a665f836-cb87-4e89-bb64-97097fc14bff")
+	)
+	(wire
+		(pts
 			(xy 69.85 95.25) (xy 72.39 95.25)
 		)
 		(stroke
@@ -2080,23 +2034,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 85.09) (xy 132.08 85.09)
+			(xy 119.38 85.09) (xy 132.08 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b7334003-597e-4f46-9592-b3d275fbee53")
-	)
-	(wire
-		(pts
-			(xy 120.65 92.71) (xy 121.92 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c181fb05-fa13-45c5-87c7-102cd9f26f1a")
 	)
 	(wire
 		(pts
@@ -2120,7 +2064,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 153.67) (xy 109.22 153.67)
+			(xy 86.36 148.59) (xy 87.63 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caa1cf4e-d857-4dc8-aded-c653c8779299")
+	)
+	(wire
+		(pts
+			(xy 86.36 153.67) (xy 95.25 153.67)
 		)
 		(stroke
 			(width 0)
@@ -2137,16 +2091,6 @@
 			(type default)
 		)
 		(uuid "d81b737d-bfb1-455a-b0c1-bfb07c726b9d")
-	)
-	(wire
-		(pts
-			(xy 137.16 95.25) (xy 137.16 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db05b682-c912-4af7-8a2e-0234e8a8eb59")
 	)
 	(wire
 		(pts
@@ -2170,36 +2114,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 132.08) (xy 86.36 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df6b2808-9330-47ca-acff-3d7cddc3f252")
-	)
-	(wire
-		(pts
-			(xy 119.38 85.09) (xy 120.65 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfe45936-653b-4888-bb03-af4f06a8c340")
-	)
-	(wire
-		(pts
-			(xy 86.36 148.59) (xy 87.63 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3c7028f-1337-4903-90af-0ba685db3ec1")
-	)
-	(wire
-		(pts
 			(xy 72.39 87.63) (xy 49.53 87.63)
 		)
 		(stroke
@@ -2220,7 +2134,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 102.87) (xy 153.67 102.87)
+			(xy 121.92 102.87) (xy 153.67 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2230,7 +2144,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 137.16) (xy 109.22 137.16)
+			(xy 86.36 137.16) (xy 95.25 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2240,13 +2154,23 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 132.08) (xy 87.63 132.08)
+			(xy 85.09 132.08) (xy 86.36 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f3a4a4f2-730d-4393-adf1-25ae9c01dd5f")
+	)
+	(wire
+		(pts
+			(xy 95.25 137.16) (xy 109.22 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f77596a7-812c-4b7a-81ff-67ed78c1af7d")
 	)
 	(wire
 		(pts
@@ -2633,35 +2557,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 86.36 134.62 180)
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 124.46 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "02d1a20e-815e-4310-8ea6-e8db5c0cb0c6")
-		(property "Reference" "R5"
-			(at 88.9 133.3499 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100k"
-			(at 88.9 135.8899 0)
+		(uuid "19bc0a60-4871-44b4-8230-6a9b533fcaa3")
+		(property "Reference" "JP1"
+			(at 124.46 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 86.36 134.62 0)
+		(property "Value" "Jumper_2_Open"
+			(at 124.46 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
+			(at 124.46 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2670,7 +2592,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 134.62 0)
+			(at 124.46 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2678,8 +2600,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, small symbol"
-			(at 86.36 134.62 0)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 124.46 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2688,161 +2610,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b3d8b64-ec0a-440d-a0d7-0484482833b4")
+			(uuid "226f652e-2eb5-43a7-9ac9-d67e7777d43a")
 		)
 		(pin "2"
-			(uuid "9f101aa9-12b0-4a45-92bd-0b85b40cf0c1")
-		)
-		(instances
-			(project "handheld1_motion4sim_#FO41AFC70E184"
-				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:ESD9B3.3ST5G")
-		(at 120.65 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1244aa01-b543-43e5-bda5-531058a8e5ea")
-		(property "Reference" "D1"
-			(at 123.19 87.6299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "ESD9B3.3ST5G"
-			(at 123.19 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
-			(at 120.65 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF"
-			(at 120.65 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "ESD protection diode, 3.3Vrwm, SOD-923"
-			(at 120.65 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4fa720fe-3ef3-4a5f-9be5-4e89658d0098")
-		)
-		(pin "1"
-			(uuid "14e000d1-e463-4470-aa67-3b8652b45311")
+			(uuid "ac967597-96fa-4ac7-b2ee-a9bfc45ccf6e")
 		)
 		(instances
 			(project ""
 				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:AO3400A")
-		(at 92.71 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16ad568b-72d6-45d4-81c2-2ecf88e4fa36")
-		(property "Reference" "Q3"
-			(at 99.06 147.3199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400A"
-			(at 99.06 149.8599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 97.79 150.495 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
-			(at 97.79 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
-			(at 92.71 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "38430e02-04f0-4229-8988-6cbf06bf08e3")
-		)
-		(pin "3"
-			(uuid "c9b5ebda-5281-4494-9f33-a9d75690ecb4")
-		)
-		(pin "2"
-			(uuid "9906fb5a-ae36-4fca-bf0a-01793fc09769")
-		)
-		(instances
-			(project "handheld1_motion4sim_#FO41AFC70E184"
-				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
-					(reference "Q3")
+					(reference "JP1")
 					(unit 1)
 				)
 			)
@@ -2850,34 +2626,32 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 86.36 151.13 180)
+		(at 82.55 132.08 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1ec2b40e-0357-4399-97e3-0e33fe1ad0bb")
-		(property "Reference" "R4"
-			(at 88.9 149.8599 0)
+		(uuid "1c885173-166e-4547-9b54-7e0bb1c33a85")
+		(property "Reference" "R1"
+			(at 82.55 127 90)
 			(effects
 				(font
 					(size 1.016 1.016)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "100k"
-			(at 88.9 152.3999 0)
+		(property "Value" "100"
+			(at 82.55 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 86.36 151.13 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 82.55 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2886,7 +2660,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 151.13 0)
+			(at 82.55 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2895,7 +2669,16 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 86.36 151.13 0)
+			(at 82.55 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25076"
+			(at 82.55 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2904,15 +2687,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "29056e75-52c6-46b5-80b0-a5dfc3441661")
+			(uuid "cb8ba642-a1b9-4c7a-8357-c09f5d9e3765")
 		)
 		(pin "2"
-			(uuid "70006177-f809-43bc-99dd-2d97d6a076b8")
+			(uuid "2600b261-ef26-474e-88f9-b00aef0841ea")
 		)
 		(instances
 			(project "handheld1_motion4sim_#FO41AFC70E184"
 				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
-					(reference "R4")
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3012,7 +2795,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_RJ:RJ45_OST_PJ012-8P8CX_Vertical"
+		(property "Footprint" "Connector_RJ:RJ45_Molex_0855135013_Vertical"
 			(at 82.55 90.805 90)
 			(effects
 				(font
@@ -3031,6 +2814,15 @@
 			)
 		)
 		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+			(at 82.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C708653"
 			(at 82.55 90.17 0)
 			(effects
 				(font
@@ -3130,6 +2922,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C20917"
+			(at 92.71 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7adb4f9-4cce-4f48-93a5-a199ef60a98b")
 		)
@@ -3143,74 +2944,6 @@
 			(project ""
 				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
 					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 82.55 148.59 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "36eac921-20e6-4af0-8156-f0816789b3d7")
-		(property "Reference" "R1"
-			(at 82.55 143.51 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 82.55 146.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 82.55 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 82.55 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5e439e20-b6ef-4169-bc19-135725d544ef")
-		)
-		(pin "2"
-			(uuid "da43de3f-d69b-4fc2-a523-ddd17d26f3c4")
-		)
-		(instances
-			(project ""
-				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -3287,6 +3020,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 92.71 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "469c8fa5-5285-4e09-ab79-d19585102f04")
+		(property "Reference" "Q3"
+			(at 99.06 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 99.06 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 97.79 150.495 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 97.79 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 92.71 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 92.71 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44f8bdda-b794-4d5f-925a-f0ba23b1410b")
+		)
+		(pin "3"
+			(uuid "3e8f7ea5-e84f-4385-84c4-752138852e94")
+		)
+		(pin "2"
+			(uuid "818e9ae4-d2b1-421a-a90e-35d20bc7faab")
+		)
+		(instances
+			(project "handheld1_motion4sim_#FO41AFC70E184"
+				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 86.36 119.38 180)
 		(unit 1)
@@ -3314,7 +3132,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 86.36 119.38 0)
 			(effects
 				(font
@@ -3333,6 +3151,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 86.36 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25530"
 			(at 86.36 119.38 0)
 			(effects
 				(font
@@ -3358,16 +3185,16 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 82.55 132.08 90)
+		(at 82.55 148.59 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "91ec6444-b90c-40e7-b789-6d8726e58c15")
+		(uuid "8a99e1ff-4c64-4e6d-8471-93bde03bfe1a")
 		(property "Reference" "R2"
-			(at 82.55 127 90)
+			(at 82.55 143.51 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -3375,15 +3202,15 @@
 			)
 		)
 		(property "Value" "100"
-			(at 82.55 129.54 90)
+			(at 82.55 146.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 82.55 132.08 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 82.55 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3392,7 +3219,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 132.08 0)
+			(at 82.55 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3401,7 +3228,16 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 82.55 132.08 0)
+			(at 82.55 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25076"
+			(at 82.55 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3410,10 +3246,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "81ca1ba0-895e-456d-9b55-dfc236e1931b")
+			(uuid "cb2a472a-4948-495d-996e-1b858ea67b1a")
 		)
 		(pin "2"
-			(uuid "2653c628-c19f-4407-872b-ba351a2387cc")
+			(uuid "4f7ab4ae-c86b-4140-ab10-3e45a18bb6c8")
 		)
 		(instances
 			(project "handheld1_motion4sim_#FO41AFC70E184"
@@ -3491,16 +3327,26 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:ESD9B3.3ST5G")
-		(at 137.16 99.06 90)
+		(lib_id "Device:R_Small")
+		(at 86.36 134.62 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ae8181ca-5507-457d-b9f7-5c2cb4f8b60a")
-		(property "Reference" "D2"
-			(at 139.7 97.7899 90)
+		(fields_autoplaced yes)
+		(uuid "a7f48c84-b867-4f24-a11c-5d130b72ff59")
+		(property "Reference" "R5"
+			(at 88.9 133.3499 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 88.9 135.8899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3508,18 +3354,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ESD9B3.3ST5G"
-			(at 139.7 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-923"
-			(at 137.16 99.06 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 86.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3527,8 +3363,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/ESD9B-D.PDF"
-			(at 137.16 99.06 0)
+		(property "Datasheet" "~"
+			(at 86.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3536,8 +3372,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "ESD protection diode, 3.3Vrwm, SOD-923"
-			(at 137.16 99.06 0)
+		(property "Description" "Resistor, small symbol"
+			(at 86.36 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3545,16 +3381,104 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "ec50f842-eb8e-4cbe-ba11-b6a4d3d9e216")
+		(property "LCSC" "C25530"
+			(at 86.36 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "1290bef9-88e8-4039-bca8-ffac9290ca98")
+			(uuid "e9855e12-d7da-47cf-aab7-4cf1c5412521")
+		)
+		(pin "2"
+			(uuid "5d177844-6696-4e67-9ab5-49ceec70cea9")
 		)
 		(instances
 			(project "handheld1_motion4sim_#FO41AFC70E184"
 				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
-					(reference "D2")
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 86.36 151.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6391794-65fb-4035-81c5-c69c2f155c27")
+		(property "Reference" "R4"
+			(at 88.9 149.8599 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100k"
+			(at 88.9 152.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 86.36 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 86.36 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25530"
+			(at 86.36 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a03ea29f-e25e-4782-b07f-3d1cce59bdc1")
+		)
+		(pin "2"
+			(uuid "9526cd49-8299-4541-bdf9-3ab35242a0dc")
+		)
+		(instances
+			(project "handheld1_motion4sim_#FO41AFC70E184"
+				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3753,6 +3677,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C161870"
+			(at 158.75 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ab9ea395-5061-4d12-8371-1ea0d47592a3")
 		)
@@ -3766,82 +3699,6 @@
 			(project ""
 				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:AO3400A")
-		(at 92.71 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d45c0ae1-0b03-48ef-af23-57b1eacd3dbc")
-		(property "Reference" "Q2"
-			(at 99.06 130.8099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AO3400A"
-			(at 99.06 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 97.79 133.985 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
-			(at 97.79 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
-			(at 92.71 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "16133c26-ceed-48c2-9309-3db2abc2b2c9")
-		)
-		(pin "3"
-			(uuid "1f3fccf3-c66b-46d5-9c55-3630f6984762")
-		)
-		(pin "2"
-			(uuid "390c9e47-ee85-49e6-8c0a-e61e79ec36fc")
-		)
-		(instances
-			(project "handheld1_motion4sim_#FO41AFC70E184"
-				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -3975,6 +3832,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C161873"
+			(at 158.75 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "7a797a43-c008-4968-981b-8e8085f14297")
 		)
@@ -4073,6 +3939,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:AO3400A")
+		(at 92.71 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fcc6336a-a64c-4cf9-8e95-1c56453d4fdb")
+		(property "Reference" "Q2"
+			(at 99.06 130.8099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AO3400A"
+			(at 99.06 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 97.79 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
+			(at 97.79 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
+			(at 92.71 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C20917"
+			(at 92.71 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b22a014-7d72-4571-825a-f10a04484207")
+		)
+		(pin "3"
+			(uuid "4e3a8ad6-0778-4024-b72e-6a094ec22503")
+		)
+		(pin "2"
+			(uuid "7c7df3fc-4ff8-4c40-88a8-8b770199508d")
+		)
+		(instances
+			(project "handheld1_motion4sim_#FO41AFC70E184"
+				(path "/66161da9-07fa-4ef0-b9e0-ae759ce40238"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 82.55 116.84 90)
 		(unit 1)
@@ -4098,7 +4049,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 82.55 116.84 0)
 			(effects
 				(font
@@ -4118,6 +4069,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 82.55 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25076"
+			(at 82.55 116.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
