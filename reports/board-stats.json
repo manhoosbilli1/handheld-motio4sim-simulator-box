@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "date": "2026-05-18T04:21:53",
+    "generator": "KiCad 10.0.1",
+    "project": "handheld1_motion4sim_FO41AFC70E184",
+    "board_name": "handheld1_motion4sim_FO41AFC70E184"
+  },
+  "board": {
+    "has_outline": true,
+    "width": "30.0000 mm",
+    "height": "60.0000 mm",
+    "area": "1800.00 mm²",
+    "front_component_density": "34.82",
+    "back_component_density": "2.17",
+    "front_copper_area": "184.565 mm²",
+    "back_copper_area": "1642.449 mm²",
+    "min_track_clearance": "0.3435 mm",
+    "min_track_width": "0.3000 mm",
+    "min_drill_diameter": "0.3000 mm",
+    "board_thickness": "1.6000 mm",
+    "front_footprint_area": "626.707 mm²",
+    "back_footprint_area": "39.059 mm²",
+    "front_footprint_density": "34.82",
+    "back_footprint_density": "2.17"
+  },
+  "pads": {
+    "through_hole": 9,
+    "smd": 32,
+    "connector": 0,
+    "npth": 2,
+    "castellated": 0,
+    "press_fit": 0
+  },
+  "vias": {
+    "through": 8,
+    "blind": 0,
+    "buried": 0,
+    "micro": 0
+  },
+  "components": {
+    "tht": {
+      "front": 2,
+      "back": 0,
+      "total": 2
+    },
+    "smd": {
+      "front": 10,
+      "back": 0,
+      "total": 10
+    },
+    "unspecified": {
+      "front": 1,
+      "back": 0,
+      "total": 1
+    },
+    "total": {
+      "front": 13,
+      "back": 0,
+      "total": 13
+    }
+  },
+  "drill_holes": [
+    {
+      "count": 9,
+      "shape": "Round",
+      "x_size": "0.9500 mm",
+      "y_size": "0.9500 mm",
+      "plated": true,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 8,
+      "shape": "Round",
+      "x_size": "0.3000 mm",
+      "y_size": "0.3000 mm",
+      "plated": true,
+      "source": "Via",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    },
+    {
+      "count": 2,
+      "shape": "Round",
+      "x_size": "1.2000 mm",
+      "y_size": "1.2000 mm",
+      "plated": false,
+      "source": "Pad",
+      "start_layer": "F.Cu",
+      "stop_layer": "B.Cu"
+    }
+  ]
+}
